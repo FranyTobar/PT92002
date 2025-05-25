@@ -26,17 +26,26 @@
   sudo apt install nasm
 
   division32.asm
+  
  nasm -f elf32 division32.asm -o division.o
+ 
 ld -m elf_i386 division.o -o division
+
 ./division
 
 multBbits.asm
+
 nasm -f elf32 multBbits.asm -o mult.o
+
 ld -m elf_i386 mult.o -o mult
+
 ./mult
 
 resta_input.asm
+
 nasm -f elf64 resta_input.asm -o resta.o
+
 ld resta.o -o resta
+
 ./resta
 
